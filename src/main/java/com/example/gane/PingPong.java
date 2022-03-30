@@ -72,11 +72,8 @@ public class PingPong extends Application {
             playerTwoYPos += (ballYPos > playerTwoYPos + player_height / 2.0) ? 3 : - 3;
             gc.fillOval(ballXPos, ballYPos, bal_R, bal_R);
         } else {
-              gameStarted = true;
-              gc.setStroke(Color.BLACK);
-              gc.setTextAlign(TextAlignment.CENTER);
-              gc.strokeText("Play", width / 2, height / 2);
-
+             gc.setStroke(Color.BLACK);
+             gc.setTextAlign(TextAlignment.CENTER);gc.strokeText("Play", width / 2, height / 2);
 
             ballXPos = width / 2;
             ballYPos = height / 2;
